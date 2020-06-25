@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "34373394830",
+    "firebase_url": "https://telemedicina-covid19.firebaseio.com",
+    "project_id": "telemedicina-covid19",
+    "storage_bucket": "telemedicina-covid19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34373394830:android:4536a6ea3f063cc1c944df",
+        "android_client_info": {
+          "package_name": "ec.mil.armada.covid19are"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34373394830-6vqrboj3gg7qkeosm17rp4hdgeided10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfc23vucELpMiFl_-3dg5zR5UFW-BgMV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34373394830-6vqrboj3gg7qkeosm17rp4hdgeided10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

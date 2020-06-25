@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ComplementariaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/lblComplementaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/informaci_n_adicional"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/blueTitle"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbxEnfermedadesCatastroficas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/tiene_alguna_enfermedad_catastrofica"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/lyEnfermedadesCatastroficas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_bg_grey"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCancer"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/cancer"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipInsuficienciaRenalCronica"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/insuficiencia_renal_cronica"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipInmunoDeprimidos"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/inmuno_deprimido"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDiabetico"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/diabetico"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHipertenso"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/hipertenso"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipEnfermedadPulmonarCronica"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/enfermedad_pulmonar_cronica"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipEnfermedadCardiovascular"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/enfermedad_cardiovascular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipEnfermedadCerebrovascular"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/enfermedad_cerebrovascular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbxViajoAlExterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/ha_viajado_al_exterior_en_los_ltimos_14_d_as"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxRecibioFamiliar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/en_los_ltimos_14_d_as_ha_recibido_a_un_familiar_con_riesgo_de_covid_19"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+
+            <CheckBox
+                android:id="@+id/cbxHospedoPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/en_los_ltimos_14_d_as_en_su_hogar_se_hosped_alguna_persona_de_otro_pa_s_con_riesgo_de_covid_19"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxCuidoEnfermo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/en_los_ltimos_14_d_as_ha_cuidado_de_un_enfermo_con_diagn_stico_de_covid_19_positivo"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxTuvoContactoSintomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/ha_estado_en_contacto_con_personas_expuestas_a_s_ntomas_respiratorios_infecciosos_como_tos_o_fiebre"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxTomoMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/ha_tomado_o_est_tomando_alg_n_medicamento_o_antibi_tico_para_alg_n_proceso_respiratorio_en_los_ltimos_14_d_as"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxVacunadoInfluenza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/se_administr_vacuna_contra_la_influenza_en_este_ltimo_a_o"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxVacunadoNeumonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/se_administr_vacuna_antineumoc_cica_neumon_a_en_este_ltimo_a_o"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbxAtencionHospitalaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/ha_recibido_atenci_n_hospitalaria_en_los_ltimos_d_as_por_presunci_n_de_contagio_de_covid_19"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/pgbProcesoGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnProcesoGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_bg"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/enviar_datos"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

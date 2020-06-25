@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SintomasActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblTituloSintomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/que_sintomas_presenta"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/blueTitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_bg_grey"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFiebre"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/fiebre_de_38_a_39"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTosSeca"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/tos_seca"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDolorGarganta"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/dolor_de_garganta"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDolorMuscular"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/dolor_muscular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDificultadRespiratoriaFatiga"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/dificultad_respiratoria_y_fatiga"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMalestarGeneral"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/malestar_general"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPerdidaOlfato"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/p_rdida_parcial_o_total_del_olfato"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDiarrea"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/diarrea"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDolorCabeza"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/dolor_de_cabeza"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFlema"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/flema"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_chips_color"
+                    app:checkedIcon="@drawable/ic_tick"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:chipCornerRadius="20dp"
+                    app:chipEndPadding="10dp"
+                    app:chipIconTint="@color/text_chips_color"
+                    app:chipStartPadding="10dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/desde_cuando_tiene_estos_s_ntomas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/blueTitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtNumeroDias"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/seleccione_el_numero_de_dias" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pgbProcesoSistomas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnProcesoSintomas"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ic_siguiente"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
